@@ -1,0 +1,22 @@
+<% if(success && success.length > 0) { %>
+<div class="flash-popup success">
+    <span><%= success[0] %></span>
+</div>
+<% } %>
+
+<% if(error && error.length > 0) { %>
+<div class="flash-popup error">
+    <span><%= error[0] %></span>
+</div>
+<% } %>
+
+<script>
+setTimeout(() => {
+    const flash = document.querySelector(".flash-popup");
+    if (flash) {
+    flash.style.transition = "opacity 0.5s ease";
+    flash.style.opacity = "0";
+    setTimeout(() => flash.remove(), 500);
+    }
+}, 3000);
+</script>

@@ -1,0 +1,27 @@
+<% layout("/layouts/boilerplate") %>
+
+
+<div class="login-wrapper">
+<div class="login-card">
+    <h1>LOGIN on Wanderlust</h1>
+
+    <form action="/login" method="POST"class = "needs-validation" novalidate>
+
+    <label class="form-label">Username</label>
+    <input name="username" type="text" class="form-control" required />
+    <div class = "invalid-feedback">Enter the username</div>
+
+
+    <label class="form-label">Password</label>
+    <input name="password" type="password" class="form-control" required />
+    <div class = "invalid-feedback">Enter the Password</div>
+
+    <button class="btn-signup">login</button>
+    <div class="auth-redirect">
+    Don't have an account?
+    <a href="/signup">Signup</a>
+    </div>
+
+    </form>
+</div>
+</div>

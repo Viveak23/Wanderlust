@@ -1,0 +1,71 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="container mt-5 d-flex justify-content-center">
+
+    <div class="card shadow-lg border-0 rounded-4 p-4" style="max-width:700px; width:100%;">
+
+        <h2 class="text-success text-center mb-4">
+            Booking Confirmed
+        </h2>
+
+        <div class="row align-items-center mb-4">
+
+            <div class="col-md-4 text-center">
+                <img src="<%= listing.image.url %>"
+                    class="img-fluid rounded-3"
+                    style="max-height:150px;">
+            </div>
+
+            <div class="col-md-8">
+                <h4 class="fw-bold"><%= listing.title %></h4>
+                <p class="text-muted mb-1">
+                    <%= listing.location %>, <%= listing.country %>
+                </p>
+                <p class="mb-0">
+                    ₹ <%= listing.price %> / night
+                </p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row mb-3">
+            <div class="col-6">
+                <strong>Check-in:</strong><br>
+                <%= checkin %>
+            </div>
+            <div class="col-6 text-end">
+                <strong>Check-out:</strong><br>
+                <%= checkout %>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-6">
+                <strong>Total Nights:</strong>
+            </div>
+            <div class="col-6 text-end">
+                <%= days %>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-6">
+                <strong>Total Price:</strong>
+            </div>
+            <div class="col-6 text-end fw-bold fs-5 text-success">
+                ₹ <%= totalPrice.toLocaleString() %>
+            </div>
+        </div>
+
+        <hr>
+
+        <a href="/listings/<%= listing._id %>"
+        class="btn btn-primary w-100 rounded-pill">
+            Back to Listing
+        </a>
+
+    </div>
+
+</div>

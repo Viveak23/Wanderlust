@@ -1,0 +1,1179 @@
+/* Navbar styling */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #fe424d !important;
+}
+
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Compass brand icon */
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+/* Compass before Home */
+.nav-compass {
+    color: #fe424d;
+    margin-right: 6px;
+}
+
+/* Navbar links */
+.nav-link {
+    color: #222222 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #fe424d !important;
+}
+
+/* Footer */
+footer {
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.f-info {
+    width: 100%;
+}
+
+.f-info-socials i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    margin-right: 1rem;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+/* Card hover animation */
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Image hover zoom */
+.card-img-top {
+    border-radius: 1rem;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-text {
+    font-weight: 500;
+    color: #222;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 18rem;        /* fixed height */
+    object-fit: cover;    /* crops image properly */
+    border-radius: 1rem;
+}
+
+.listing-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.form-container{
+    margin-top: 40px;
+}
+
+.form-heading{
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.add-btn{
+    margin-top: 10px;
+    padding: 8px 24px;
+    border-radius: 8px;
+}
+
+.form-control{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-container{
+    margin-top: 40px;
+}
+
+.form-heading{
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.add-btn{
+    margin-top: 10px;
+    padding: 8px 24px;
+    border-radius: 8px;
+}
+
+.form-control{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.show-heading{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.show-card{
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.show-img{
+    height: 320px;
+    object-fit: cover;
+}
+
+.show-details{
+    list-style: none;
+    padding-left: 0;
+    font-size: 16px;
+}
+
+.show-details li{
+    margin-bottom: 8px;
+}
+
+.listing-actions{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* edit button */
+.btn-edit{
+    background-color: #0d6efd;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-edit:hover{
+    background-color: #0b5ed7;
+    color: white;
+}
+
+/* delete button */
+.delete-form{
+    display: inline;
+}
+
+.btn-delete{
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-delete:hover{
+    background-color: #bb2d3b;
+}
+
+
+
+/* error page */
+.error-wrapper{
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.error-card{
+    background:white;
+    padding:40px 50px;
+    border-radius:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.12);
+    text-align:center;
+    max-width:600px;
+}
+
+.error-code{
+    font-size:80px;
+    font-weight:700;
+    color:#ff4d4f;
+    margin-bottom:10px;
+}
+
+.error-msg{
+    font-size:22px;
+    margin-bottom:15px;
+    color:#333;
+}
+
+.error-stack{
+    text-align:left;
+    background:#f5f5f5;
+    padding:15px;
+    border-radius:10px;
+    font-size:13px;
+    max-height:200px;
+    overflow:auto;
+    margin-bottom:20px;
+}
+
+.error-btn{
+    display:inline-block;
+    background:#ff4d4f;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.error-btn:hover{
+    background:#e43d3f;
+}
+
+.review-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-top: 30px;
+}
+
+.review-box h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.review-box label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+    color: #444;
+}
+
+.review-box input[type="range"] {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.review-box textarea {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.review-box textarea:focus {
+    outline: none;
+    border-color: #ff4d4f;
+    box-shadow: 0 0 5px rgba(255,77,79,0.25);
+}
+
+.review-box button {
+    background: #ff4d4f;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.review-box button:hover {
+    background: #e63c3f;
+}
+
+
+
+.error-wrapper{
+    height: 80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.error-box{
+    text-align:center;
+    padding:40px 60px;
+    background:#fff;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.error-title{
+    color:red;
+    font-size:50px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.error-code{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.error-message{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.error-btn{
+    padding:10px 22px;
+    background:#ff4d4f;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+
+.review-section{
+    margin-top:40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.review-form{
+    width:420px;
+    background:#ffffff;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.review-form:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.18);
+}
+
+.review-title{
+    font-size:28px;
+    font-weight:600;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.review-field{
+    margin-bottom:22px;
+    display:flex;
+    flex-direction:column;
+}
+
+.review-field label{
+    font-weight:500;
+    margin-bottom:6px;
+}
+
+.review-field input[type="range"]{
+    width:100%;
+    cursor:pointer;
+}
+
+.review-field textarea{
+    width:100%;
+    height:130px;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    resize:none;
+    outline:none;
+    transition:0.2s;
+}
+
+.review-field textarea:focus{
+    border:1px solid #ff385c;
+    box-shadow:0 0 5px rgba(255,56,92,0.3);
+}
+
+.review-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#ff385c;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+.review-btn:hover{
+    background:#e03150;
+    transform:scale(1.02);
+}
+
+
+/* ===== Review Section Wrapper ===== */
+.review-section {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    margin-top: 50px;
+    transition: all 0.3s ease;
+}
+
+/* Heading */
+.review-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #222;
+}
+
+/* Field spacing */
+.review-field {
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.review-field label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #444;
+    letter-spacing: 0.5px;
+}
+
+/* Range slider styling */
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Textarea styling */
+.review-field textarea {
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+    resize: none;
+}
+
+/* Focus effect */
+.review-field textarea:focus {
+    border-color: #ff385c;
+    box-shadow: 0 0 0 0.2rem rgba(255, 56, 92, 0.2);
+}
+
+/* Validation Styling Override */
+.was-validated .form-control:valid {
+    border-color: #28a745;
+}
+
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+
+/* Validation Text */
+.valid-feedback {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.invalid-feedback {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Submit Button */
+.review-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff385c, #ff6b81);
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(255, 56, 92, 0.3);
+}
+
+/* Button Hover */
+.review-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(255, 56, 92, 0.4);
+}
+
+/* Button Active */
+.review-btn:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .review-section {
+        padding: 25px;
+    }
+}
+
+
+/* ===== Rectangle Review Card ===== */
+.review-section {
+    background: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 35px 60px;   /* More horizontal padding */
+    border-radius: 10px;  /* Less round */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Heading */
+.review-title {
+    text-align: left;   /* looks more rectangular */
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Fields */
+.review-field {
+    margin-bottom: 20px;
+}
+
+/* Textarea */
+.review-field textarea {
+    border-radius: 8px;
+    padding: 12px;
+    border: 2px solid #e5e5e5;
+    transition: 0.3s ease;
+    min-height: 120px;   /* less tall */
+}
+
+.review-field textarea:focus {
+    border-color: #ff385c;
+    box-shadow: 0 0 0 0.2rem rgba(255, 56, 92, 0.15);
+}
+
+/* Button */
+.review-btn {
+    width: 220px;   /* not full width */
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    background: #ff385c;
+    color: white;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.review-btn:hover {
+    background: #e03150;
+}
+
+/* ===== All Reviews Section ===== */
+
+.all-reviews-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+/* Container */
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual Review Card */
+.review-card {
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+    border-left: 5px solid #ff385c;
+}
+
+/* Hover Effect */
+.review-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Rating */
+.review-rating {
+    font-weight: 600;
+    color: #ff385c;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Comment */
+.review-comment {
+    margin: 0;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* ===== Review Section Minimal Style ===== */
+
+.review-heading {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Form spacing */
+.review-form {
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Range slider full width */
+input[type="range"] {
+    width: 100%;
+}
+
+/* Textarea large & rectangular */
+textarea {
+    width: 100%;
+    min-height: 140px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 15px;
+    resize: none;
+}
+
+/* Focus effect */
+textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+/* Simple submit button */
+.submit-btn {
+    padding: 8px 18px;
+    font-size: 15px;
+    border: 1px solid #333;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: #333;
+    color: white;
+}
+
+
+/* Review Card Layout */
+.review-card {
+    background: #ffffff;
+    padding: 18px 20px;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Username */
+.review-user {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* Rating */
+.review-rating {
+    font-size: 14px;
+    color: #ff385c;
+    margin-bottom: 6px;
+}
+
+/* Comment */
+.review-comment {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Delete Button */
+.delete-review-form {
+    text-align: right;
+}
+
+.delete-review-btn {
+    background: #fff;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    padding: 5px 12px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.delete-review-btn:hover {
+    background: #dc3545;
+    color: white;
+}
+
+
+/* Container full width */
+.reviews-container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Rectangle Review Card */
+.review-card {
+    width: 100%;
+    background: #ffffff;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.review-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Top section (name + rating side by side) */
+.review-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-user {
+    margin: 0;
+    font-weight: 600;
+}
+
+.review-rating {
+    color: #ff385c;
+    font-weight: 500;
+}
+
+/* Comment */
+.review-comment {
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #444;
+}
+
+/* Delete Button */
+.delete-review-btn {
+    background: white;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.delete-review-btn:hover {
+    background: #dc3545;
+    color: white;
+}
+
+.flash-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #00c853, #2e7d32);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    animation: slideIn 0.5s ease forwards;
+    z-index: 9999;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+ /* Signup Section Wrapper */
+.signup-wrapper {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f7f7f7; /* Airbnb light gray */
+}
+
+/* Card */
+.signup-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 45px 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.signup-card h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #222222;
+}
+
+/* Labels */
+.form-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #222222;
+  font-size: 14px;
+}
+
+/* Inputs */
+.form-control {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #222222;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Validation message spacing */
+.invalid-feedback {
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+/* Button */
+.btn-signup {
+  width: 100%;
+  padding: 13px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+  background: #ff385c; /* Airbnb red */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+}
+
+.btn-signup:hover {
+  background: #e31c5f;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .signup-card {
+    padding: 35px 25px;
+  }
+}
+
+/* Login Section */
+.login-wrapper {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #f7f7f7;
+}
+
+/* Login Card */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Heading */
+.login-card h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #222222;
+}
+
+/* Labels */
+.login-card .form-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Inputs */
+.login-card .form-control {
+  width: 100%;
+  padding: 13px 14px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.login-card .form-control:focus {
+  border-color: #ff385c;
+  box-shadow: 0 0 0 3px rgba(255, 56, 92, 0.15);
+  outline: none;
+}
+
+/* Validation */
+.login-card .invalid-feedback {
+  margin-bottom: 18px;
+  font-size: 13px;
+}
+
+/* Button */
+.login-card .btn-signup {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+  background: #ff385c;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+}
+
+.login-card .btn-signup:hover {
+  background: #e31c5f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 56, 92, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .login-card {
+    padding: 35px 25px;
+  }
+}
+
+.auth-redirect {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #555;
+}
+
+.auth-redirect a {
+  color: #ff385c;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.auth-redirect a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FORM CONTAINER ===== */
+.form-container {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+/* ===== FORM CARD STYLE ===== */
+.form-container .col-lg-8 {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.form-container .col-lg-8:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== HEADING ===== */
+.form-heading {
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* ===== LABELS ===== */
+.form-label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* ===== INPUT FIELDS ===== */
+.form-control {
+    border-radius: 12px;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ff5a5f;
+    box-shadow: 0 0 0 0.2rem rgba(255, 90, 95, 0.15);
+}
+
+/* ===== FILE INPUT ===== */
+input[type="file"] {
+    padding: 8px;
+}
+
+/* ===== BUTTON ===== */
+.add-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #ff5a5f;
+    border-color: #ff5a5f;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 90, 95, 0.3);
+}
+
+/* ===== INVALID FEEDBACK STYLE ===== */
+.invalid-feedback {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+
+body {
+    background-color: #f8f9fa;
+}
+
+#map {
+    height: 400px;
+    width:60vh;
+}
+
+
+.btn-reserve{
+    background-color: #1aaf12;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}

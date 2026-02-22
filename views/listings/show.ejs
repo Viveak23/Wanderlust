@@ -1,0 +1,136 @@
+<!--<% layout("/layouts/boilerplate") %>
+<body>
+    <h3>Listing Details :</h3>
+    <ul>
+    <li><%= listing.title %></li>
+    <li><%= listing.description %></li>
+    <li>&#8377; <%= listing.price.toLocaleString("en-IN") %></li>
+    <li><%= listing.location %></li>
+    <li><%= listing.country %></li>
+    </ul>
+    <br />
+    <a href="/listings/<%= listing._id %>/edit">Edit this Listing</a>
+    <br /><br />
+    <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
+    <button>Delete this listing</button>
+    </form>
+</body> -->
+
+
+<% layout("/layouts/boilerplate") %>
+
+<div class="row">
+    <div class="col-8 offset-2">
+
+        <h3 class="show-heading"><%= listing.title %></h3>
+        <div class="card show-card col-6 offset-3">
+            <img
+                src="<%= listing.image.url %>"
+                class="card-img-top show-img"
+                alt="listing_image"
+            />
+
+            <div class="card-body">
+                <p class="card-text"><%= listing.title %></p>
+            </div>
+        </div>
+
+        <ul class="show-details">
+            <i>owned by : <%= listing.owner ? listing.owner.username : "viveak" %></i>
+            <br>
+            <li><%= listing.description %></li>
+            <li>₹ <%= listing.price.toLocaleString("en-IN") %> / night</li>
+            <li><%= listing.location %>, <%= listing.country %></li>
+        </ul>
+
+
+    <div class="listing-actions">
+    <a href="/listings/<%= listing._id %>/edit" class="btn-edit">Edit this Listing</a>
+    <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE" class="delete-form">
+    <button class="btn-delete">Delete this Listing</button>
+    <a class = "btn-reserve "href="/listings/<%= listing._id %>/reserve" class="btn btn-success">Reserve the property</a>
+
+    </form>
+    </div>
+    
+
+
+
+
+<div class="review-section">
+    <h4 class="review-title">Leave a Review</h4>
+
+    <form action="/listings/<%= listing._id%>/reviews" method="POST"class = "needs-validation" novalidate>
+        <div class="review-field">
+            <label for="rating">Rating</label>
+            <input type="range" min="1" max="5" id="rating" name="review[rating]" required>
+            <div class="invalid-feedback">
+                Please select a rating.
+            </div>
+            <div class="valid-feedback">
+                nice rating.
+            </div>
+        </div>
+
+
+        <div class="review-field">
+        <label class="comment">comment</label>
+        <textarea
+            name="review[comment]"
+            id="comment"
+            class="form-control"
+            required
+        ></textarea>
+        <div class = "valid-feedback">nice review</div>
+        <div class = "invalid-feedback">please share some review</div>
+        </div>
+        <button class="review-btn">Submit Review</button>
+    </form>
+    <h4 class="all-reviews-title">All Reviews</h4>
+
+<div class="reviews-container">
+    <% for(review of listing.reviews) { %>
+
+        <div class="review-card">
+
+            <div class="review-top">
+                <h6 class="review-user"><%= review.author?.username || "viveak23" %></h6>
+                            <span class="review-rating">⭐ <%= review.rating %>/5</span>
+            </div>
+            <p class="review-comment">
+                <%= review.comment %>
+            </p>
+
+            <form action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE"
+                method="POST">
+                <button class="delete-review-btn">Delete</button>
+            </form>
+
+            
+
+        </div>
+
+    <% } %>
+</div>
+</div>
+<div class = "col-6 offset-3 mb-3">
+    <h3> Where you'll be</h3>
+    <div id="map"></div>
+</div>
+</div>
+</div>
+
+<script>
+    mapboxgl.accessToken = "<%= mapToken %>";
+
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v12',
+        center: <%- JSON.stringify(listing.geometry.coordinates) %>,
+        zoom: 9
+    });
+
+    new mapboxgl.Marker()
+        .setLngLat(<%- JSON.stringify(listing.geometry.coordinates) %>)
+        .addTo(map);
+</script>
